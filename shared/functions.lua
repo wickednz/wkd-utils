@@ -2,9 +2,7 @@ Shared = Shared or {}
 QBCore = exports["qb-core"]:GetCoreObject()
 
 function Shared.dump(o)
-    print('Dumping..')
-  
-	if type(o) == 'table' then
+   	if type(o) == 'table' then
 	   local s = '{ '
 	   for k,v in pairs(o) do
 		  if type(k) ~= 'number' then k = '"'..k..'"' end
